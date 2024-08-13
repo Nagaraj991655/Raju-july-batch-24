@@ -16,6 +16,12 @@ pipeline {
             steps {
                 sh 'echo "am Deploying the image in the doc"'
             }
+        }stage('cpudetails'){
+            steps{
+                '''
+                lscpu
+                '''
+            }
         }
     }
 }
