@@ -18,5 +18,13 @@ pipeline {
                 sh 'echo "am deploying the image in the kube8"'
             }
         }
+        stage('cpuutilizations') {
+            steps {
+                sh '''
+                   lscpu
+                   
+                   '''
+            }
+        }
     }
 }
