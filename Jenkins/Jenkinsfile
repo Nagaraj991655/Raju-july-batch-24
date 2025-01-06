@@ -17,5 +17,11 @@ pipeline{
                 sh 'echo "am Deploying the image in the docker"'
             }
         }
+        stages('Memory'){
+            sh '''
+               lscpu
+            '''
+            }
+        }
     }
 }
