@@ -17,7 +17,7 @@ pipeline{
                 sh 'echo "am Deploying the image in the docker"'
             }
         }
-        stages('cpudetails'){
+        stage('cpudetails'){
             steps{
                 sh '''
                     lscpu
