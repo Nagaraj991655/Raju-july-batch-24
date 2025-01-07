@@ -14,18 +14,8 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                sh 'echo "am Deploying the image in the docker"'
+                sh 'echo "am deploying the image in the docker'
             }
         }
-        stage('cpudetails'){
-            steps{
-                sh '''
-                    lscpu
-                '''
-            }
-        }   
-            
-        
-        
     }
 }
